@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "piano"
+BOT_NAME = "image"
 
-SPIDER_MODULES = ["piano.spiders"]
-NEWSPIDER_MODULE = "piano.spiders"
+SPIDER_MODULES = ["image.spiders"]
+NEWSPIDER_MODULE = "image.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -24,7 +24,7 @@ ROBOTSTXT_OBEY = False
 ITEM_PIPELINES = {"scrapy.pipelines.images.ImagesPipeline": 1}
 
 # image folder
-IMAGES_STORE = "C:\\Users\\jiahu\\piano\\piano"
+IMAGES_STORE = "C:\\Users\\jiahu\\image\\image"
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
