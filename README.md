@@ -15,5 +15,10 @@ cd image
 ## generate the main spider python file: it will generate a default spider python file
 scrapy genspider imgdl image.com
 
+## modify below files
+/image/image/spider/imgdl.py
+/image/image/items.py
+/image/image/settings.py
+
 
 
