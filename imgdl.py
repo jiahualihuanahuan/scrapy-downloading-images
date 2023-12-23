@@ -3,7 +3,7 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from image.items import ImageItem
 
-class QupuSpider(CrawlSpider):
+class ImgdlSpider(CrawlSpider):
     name = "imgdl"
     allowed_domains = ["meitu131.com","ertuba.com"]
     start_urls = ["https://www.meitu131.com/meinv"]
@@ -15,6 +15,6 @@ class QupuSpider(CrawlSpider):
     def parse_item(self, response):
         image_urls = response.css('div.work-content').css('img::attr(src)').extract()
         # image_urls = response.urljoin(image_urls)
-        item = PianoItem() 
+        item = ImageItem() 
         item['image_urls'] = image_urls
         yield item 
