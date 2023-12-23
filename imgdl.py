@@ -1,7 +1,7 @@
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
-from piano.items import PianoItem
+from image.items import ImageItem
 
 class QupuSpider(CrawlSpider):
     name = "imgdl"
