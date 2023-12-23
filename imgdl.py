@@ -4,7 +4,7 @@ from scrapy.spiders import CrawlSpider, Rule
 from piano.items import PianoItem
 
 class QupuSpider(CrawlSpider):
-    name = "qupu"
+    name = "imgdl"
     allowed_domains = ["meitu131.com","ertuba.com"]
     start_urls = ["https://www.meitu131.com/meinv"]
 
