@@ -9,8 +9,6 @@ class QupuSpider(CrawlSpider):
     start_urls = ["https://www.meitu131.com/meinv"]
 
     rules = (
-        # Rule(LinkExtractor(allow=r"meinv"), ),
-        # Rule(LinkExtractor(allow=r"gangqin", deny=r"video"), ),
         Rule(LinkExtractor(allow=r"meinv/[0-9]{1,8}"), callback="parse_item", follow=True),
             )
 
