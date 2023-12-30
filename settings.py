@@ -26,6 +26,17 @@ ITEM_PIPELINES = {"scrapy.pipelines.images.ImagesPipeline": 1}
 # image folder
 IMAGES_STORE = "C:\\Users\\jiahu\\image\\image"
 
+IMAGES_RETRY_TIMES = 0
+
+RETRY_TIMES = 0
+
+DOWNLOAD_TIMEOUT = 5
+
+IMAGES_MIN_HEIGHT = 500
+IMAGES_MIN_WIDTH = 500
+
+MEDIA_ALLOW_REDIRECTS = True
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
